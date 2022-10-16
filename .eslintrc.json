@@ -1,0 +1,65 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true
+  },
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "ignorePatterns": ["dist/**", "index.test.js"],
+  "rules": {
+    "linebreak-style": ["warn", "unix"],
+    "quotes": "off",
+    "@typescript-eslint/quotes": [
+      "warn",
+      "single",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "semi": "off",
+    "@typescript-eslint/semi": ["warn", "never"],
+    "no-invalid-regexp": "error",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "warn",
+    "@typescript-eslint/no-empty-interface": "warn",
+    "no-extra-semi": "off",
+    "@typescript-eslint/no-extra-semi": "error",
+    "@typescript-eslint/prefer-return-this-type": "warn",
+    "@typescript-eslint/strict-boolean-expressions": [
+      "error",
+      {
+        "allowNullableObject": false,
+        "allowString": false,
+        "allowNumber": false
+      }
+    ],
+    "no-extra-boolean-cast": ["error", { "enforceForLogicalOperands": false }],
+    "@typescript-eslint/array-type": "error",
+    "no-empty": "warn",
+    "prefer-arrow-callback": "error",
+    "no-restricted-imports": "off",
+    "@typescript-eslint/no-unnecessary-boolean-literal-compare": "error",
+    "no-duplicate-imports": "off",
+    "@typescript-eslint/no-duplicate-imports": "error",
+    "no-extra-parens": "off",
+    "@typescript-eslint/no-unused-expressions": "warn",
+    "no-unused-labels": "warn",
+    "no-new-wrappers": "error",
+    "no-unneeded-ternary": "error",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/consistent-type-imports": [
+      "warn",
+      {
+        "disallowTypeAnnotations": false
+      }
+    ],
+    "no-console": "error"
+  }
+}
