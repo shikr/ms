@@ -1,7 +1,7 @@
 {
   "name": "@sabier/ms",
   "version": "1.0.0",
-  "description": "Milliseconds conversion",
+  "description": "Milliseconds conversion tool",
   "main": "dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -10,7 +10,7 @@
   "author": "sabier",
   "repository": {
     "type": "git",
-    "url": "https://github.com/S4bier/ms"
+    "url": "https://github.com/shikr/ms"
   },
   "license": "MIT",
   "private": false,
